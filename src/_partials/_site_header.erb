@@ -1,0 +1,20 @@
+<header class="sticky top-0 z-20 px-4 py-4 text-white bg-gray-500 shadow opacity-95">
+  <div class="flex items-center justify-between mx-auto max-w-7xl">
+    <a href="/">
+      <img class="w-16 h-16 rounded-full" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="IDK Avatar">
+    </a>
+    <nav class="space-x-4">
+     <ul class="flex space-x-2">
+        <li>
+          <%= render LinkComponent.new(href: "/", classes: "block px-4 py-2 rounded-md").with_content("Home") %>
+        </li>
+        <li>
+          <%= render LinkComponent.new(href: "/about", classes: "block px-4 py-2 rounded-md").with_content("About") %>
+        </li>
+        <li>
+          <%= render LinkComponent.new(href: "/posts", classes: "block px-4 py-2 rounded-md").with_content("Blog") %>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

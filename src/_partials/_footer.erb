@@ -1,0 +1,16 @@
+<footer class="bg-primary-gray">
+  <div class="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8">
+    <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
+      <% [["About", "/about/"], ["Blog", "/blog/"]].each do |link| %>
+        <div class="px-5 py-2">
+          <a href="<%= link.last %>" class="text-primary-white"><%= link.first %></a>
+        </div>
+      <% end %>
+    </nav>
+    <p class="mt-8 text-sm text-center text-primary-white opacity-80">
+      &copy; 2021 You. All rights reserved. Except as otherwise noted, the content of this page is licensed
+      under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and
+      code samples are licensed under the MIT License.
+    </p>
+  </div>
+</footer>

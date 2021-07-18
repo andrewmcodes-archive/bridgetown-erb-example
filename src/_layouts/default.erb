@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="antialiased selection:bg-[#fff2b3] selection:border-[#fff2b3] selection:text-black"
+  data-env="<%= Bridgetown.env %>"
+  >
+  <%= render "head", metadata: site.metadata, page: page %>
+  <body class="<%= class_map "debug-screens": Bridgetown.env.development? %>">
+    <div class="min-h-screen">
+      <%= render "site_header" %>
+      <main class="mx-auto">
+        <%= yield %>
+      </main>
+    </div>
+    <%= render "footer", metadata: site.metadata %>
+  </body>
+</html>

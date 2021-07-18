@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<article class="px-4 py-16 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+  <header>
+    <%= resource.data.title %>
+  </header>
+  <div class="relative mx-auto divide-y-2 divide-primary-gray max-w-prose">
+    <%= render ProseComponent.new(classes: "pt-4") do %>
+      <%= yield %>
+    <% end %>
+  </div>
+</article>
